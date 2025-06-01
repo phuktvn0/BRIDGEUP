@@ -1,0 +1,69 @@
+@use "../../scss/" as *;
+
+.footer {
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: #fff;
+
+    .logo {
+        a {
+            color: #000;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                color: #0077cc;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 1000px;
+        margin: auto;
+
+        &__logo {
+            @include flex(center, center);
+            margin-bottom: 3rem;
+        }
+
+        &__menus {
+            display: flex; 
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            a {
+                color: #333;
+                text-decoration: none;
+
+                &:hover {
+                    color: #0077cc;
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 1rem;
+
+                a {
+                    font-size: 1.8rem;
+                    color: #333;
+
+                    &:hover {
+                        color: #0077cc;
+                    }
+                }
+            }
+        }
+    }
+}
