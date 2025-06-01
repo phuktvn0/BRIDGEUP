@@ -37,7 +37,7 @@ const Detail = () => {
                                     <div className="section__header">
                                         <h2>Casts</h2>
                                     </div>
-                                    <CastList id={item.id}/>
+                                    <CastList id={item.id} />
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Detail = () => {
                                 <div className="section__header mb-2">
                                     <h2>Similar</h2>
                                 </div>
-                                <MovieList category={category} type="similar" id={item.id}/>
+                                <MovieList category={category} type="similar" id={item.id} />
                             </div>
                         </div>
                     </>
